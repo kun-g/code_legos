@@ -1,14 +1,7 @@
 # Code Legos For On-Chain Activities
 
-## 组成部分
-- Token
-- 
-- 
-
-BSC:
-    EasyTransfer: new Contract('EasyTransfer', '0xaC64002E626AD3fe687B1168C2769f1105C100bb', 'EasyTransfer.json'),
-    
 ## 批量转账合约
+* ABI: abis/BatchTransfer.json
 * Mubai: 0xa1cB7F2e960b0792f01980685d09C1D857EB62e7
 
 ### transferETH - 批量分发GAS
@@ -49,13 +42,3 @@ BSC:
   * queryToken (IERC20 token, address[] memory from) public view returns(uint256[] memory)
   * queryETH (address[] memory from) public view returns(uint256[] memory)
 
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
