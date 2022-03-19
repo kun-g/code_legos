@@ -29,7 +29,7 @@ for account_index in range(count):
     addr = bip44_hdwallet.address()
     pk   = bip44_hdwallet.private_key()
 
-    print(account_index, addr)
+    print(account_index, addr, pk)
 
 
 print("\n使用前，确认前3个地址是否一致")
